@@ -1,0 +1,1 @@
+Wtyczka zmienia ikonki w zasobniku systemowym tak, aby pasowa³y do systemu Windows od wersji 7 wzwy¿.
