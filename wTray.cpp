@@ -290,6 +290,7 @@ extern "C" INT_PTR __declspec(dllexport) __stdcall Unload()
   PluginLink.CallService(AQQ_ICONS_DESTROYPNGICON,0,(LPARAM)INVISIBLE);
   PluginLink.CallService(AQQ_ICONS_DESTROYPNGICON,0,(LPARAM)FREEFORCHAT);
   PluginLink.CallService(AQQ_ICONS_DESTROYPNGICON,0,(LPARAM)NEW_MESSAGE);
+  PluginLink.CallService(AQQ_ICONS_DESTROYPNGICON,0,(LPARAM)SECURE);
 
   return 0;
 }
