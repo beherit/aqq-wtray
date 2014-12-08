@@ -24,7 +24,7 @@
 #pragma hdrstop
 #pragma argsused
 #include <PluginAPI.h>
-#include <IdHashMessageDigest.hpp>
+//#include <IdHashMessageDigest.hpp>
 
 int WINAPI DllEntryPoint(HINSTANCE hinst, unsigned long reason, void* lpReserved)
 {
@@ -151,7 +151,7 @@ void ExtractRes(wchar_t* FileName, wchar_t* ResName, wchar_t* ResType)
 //---------------------------------------------------------------------------
 
 //Obliczanie sumy kontrolnej pliku
-UnicodeString MD5File(UnicodeString FileName)
+/*UnicodeString MD5File(UnicodeString FileName)
 {
   if(FileExists(FileName))
   {
@@ -180,7 +180,7 @@ UnicodeString MD5File(UnicodeString FileName)
   }
   else
    return 0;
-}
+}*/
 //---------------------------------------------------------------------------
 
 extern "C" INT_PTR __declspec(dllexport) __stdcall Load(PPluginLink Link)
@@ -196,56 +196,56 @@ extern "C" INT_PTR __declspec(dllexport) __stdcall Load(PPluginLink Link)
   //2BD46DE45A5C92DA90295EC0C5A24C94
   if(!FileExists(PluginUserDir + "\\\\wTray\\\\Online.png"))
    ExtractRes((PluginUserDir + "\\\\wTray\\\\Online.png").w_str(),L"ONLINE",L"DATA");
-  else if(MD5File(PluginUserDir + "\\\\wTray\\\\Online.png")!="2BD46DE45A5C92DA90295EC0C5A24C94")
-   ExtractRes((PluginUserDir + "\\\\wTray\\\\Online.png").w_str(),L"ONLINE",L"DATA");
+  //else if(MD5File(PluginUserDir + "\\\\wTray\\\\Online.png")!="2BD46DE45A5C92DA90295EC0C5A24C94")
+  // ExtractRes((PluginUserDir + "\\\\wTray\\\\Online.png").w_str(),L"ONLINE",L"DATA");
   //Wypakiwanie pliku Offline.png
   //7BAE9E67C46528FA691A3BBDE55C3BE1
   if(!FileExists(PluginUserDir + "\\\\wTray\\\\Offline.png"))
    ExtractRes((PluginUserDir + "\\\\wTray\\\\Offline.png").w_str(),L"OFFLINE",L"DATA");
-  else if(MD5File(PluginUserDir + "\\\\wTray\\\\Offline.png")!="7BAE9E67C46528FA691A3BBDE55C3BE1")
-   ExtractRes((PluginUserDir + "\\\\wTray\\\\Offline.png").w_str(),L"OFFLINE",L"DATA");
+  //else if(MD5File(PluginUserDir + "\\\\wTray\\\\Offline.png")!="7BAE9E67C46528FA691A3BBDE55C3BE1")
+  // ExtractRes((PluginUserDir + "\\\\wTray\\\\Offline.png").w_str(),L"OFFLINE",L"DATA");
   //Wypakiwanie pliku Away.png
   //A08AD8C52EA4DBAEC62A482611D00908
   if(!FileExists(PluginUserDir + "\\\\wTray\\\\Away.png"))
    ExtractRes((PluginUserDir + "\\\\wTray\\\\Away.png").w_str(),L"AWAY",L"DATA");
-  else if(MD5File(PluginUserDir + "\\\\wTray\\\\Away.png")!="A08AD8C52EA4DBAEC62A482611D00908")
-   ExtractRes((PluginUserDir + "\\\\wTray\\\\Away.png").w_str(),L"AWAY",L"DATA");
+  //else if(MD5File(PluginUserDir + "\\\\wTray\\\\Away.png")!="A08AD8C52EA4DBAEC62A482611D00908")
+  // ExtractRes((PluginUserDir + "\\\\wTray\\\\Away.png").w_str(),L"AWAY",L"DATA");
   //Wypakiwanie pliku XA.png
   //ED59A480A4412159F1E428EA7C811253
   if(!FileExists(PluginUserDir + "\\\\wTray\\\\XA.png"))
    ExtractRes((PluginUserDir + "\\\\wTray\\\\XA.png").w_str(),L"XA",L"DATA");
-  else if(MD5File(PluginUserDir + "\\\\wTray\\\\XA.png")!="ED59A480A4412159F1E428EA7C811253")
-   ExtractRes((PluginUserDir + "\\\\wTray\\\\XA.png").w_str(),L"XA",L"DATA");
+  //else if(MD5File(PluginUserDir + "\\\\wTray\\\\XA.png")!="ED59A480A4412159F1E428EA7C811253")
+  // ExtractRes((PluginUserDir + "\\\\wTray\\\\XA.png").w_str(),L"XA",L"DATA");
   //Wypakiwanie pliku DND.png
   //C3DE0E2059FEECD876FEAED11751256A
   if(!FileExists(PluginUserDir + "\\\\wTray\\\\DND.png"))
    ExtractRes((PluginUserDir + "\\\\wTray\\\\DND.png").w_str(),L"DND",L"DATA");
-  else if(MD5File(PluginUserDir + "\\\\wTray\\\\DND.png")!="C3DE0E2059FEECD876FEAED11751256A")
-   ExtractRes((PluginUserDir + "\\\\wTray\\\\DND.png").w_str(),L"DND",L"DATA");
+  //else if(MD5File(PluginUserDir + "\\\\wTray\\\\DND.png")!="C3DE0E2059FEECD876FEAED11751256A")
+  // ExtractRes((PluginUserDir + "\\\\wTray\\\\DND.png").w_str(),L"DND",L"DATA");
   //Wypakiwanie pliku Invisible.png
   //F5262A1719F29BAABE6EEA4B5ABDBA53
   if(!FileExists(PluginUserDir + "\\\\wTray\\\\Invisible.png"))
    ExtractRes((PluginUserDir + "\\\\wTray\\\\Invisible.png").w_str(),L"INVISIBLE",L"DATA");
-  else if(MD5File(PluginUserDir + "\\\\wTray\\\\Invisible.png")!="F5262A1719F29BAABE6EEA4B5ABDBA53")
-   ExtractRes((PluginUserDir + "\\\\wTray\\\\Invisible.png").w_str(),L"INVISIBLE",L"DATA");
+  //else if(MD5File(PluginUserDir + "\\\\wTray\\\\Invisible.png")!="F5262A1719F29BAABE6EEA4B5ABDBA53")
+  // ExtractRes((PluginUserDir + "\\\\wTray\\\\Invisible.png").w_str(),L"INVISIBLE",L"DATA");
   //Wypakiwanie pliku FreeForChat.png
   //63BF317FB4CED422E42D4D6F4C971CBB
   if(!FileExists(PluginUserDir + "\\\\wTray\\\\FreeForChat.png"))
    ExtractRes((PluginUserDir + "\\\\wTray\\\\FreeForChat.png").w_str(),L"FREEFORCHAT",L"DATA");
-  else if(MD5File(PluginUserDir + "\\\\wTray\\\\FreeForChat.png")!="63BF317FB4CED422E42D4D6F4C971CBB")
-   ExtractRes((PluginUserDir + "\\\\wTray\\\\FreeForChat.png").w_str(),L"FREEFORCHAT",L"DATA");
+  //else if(MD5File(PluginUserDir + "\\\\wTray\\\\FreeForChat.png")!="63BF317FB4CED422E42D4D6F4C971CBB")
+  // ExtractRes((PluginUserDir + "\\\\wTray\\\\FreeForChat.png").w_str(),L"FREEFORCHAT",L"DATA");
   //Wypakiwanie pliku Message.png
   //2128CBC0D7141F70E5478133C8123A50
   if(!FileExists(PluginUserDir + "\\\\wTray\\\\Message.png"))
    ExtractRes((PluginUserDir + "\\\\wTray\\\\Message.png").w_str(),L"MESSAGE",L"DATA");
-  else if(MD5File(PluginUserDir + "\\\\wTray\\\\Message.png")!="2128CBC0D7141F70E5478133C8123A50")
-   ExtractRes((PluginUserDir + "\\\\wTray\\\\Message.png").w_str(),L"MESSAGE",L"DATA");
+  //else if(MD5File(PluginUserDir + "\\\\wTray\\\\Message.png")!="2128CBC0D7141F70E5478133C8123A50")
+  // ExtractRes((PluginUserDir + "\\\\wTray\\\\Message.png").w_str(),L"MESSAGE",L"DATA");
   //Wypakiwanie pliku Secure.png
   //61352B4B83745248D4871DFC63AA114A
   if(!FileExists(PluginUserDir + "\\\\wTray\\\\Secure.png"))
    ExtractRes((PluginUserDir + "\\\\wTray\\\\Secure.png").w_str(),L"SECURE",L"DATA");
-  else if(MD5File(PluginUserDir + "\\\\wTray\\\\Secure.png")!="61352B4B83745248D4871DFC63AA114A")
-   ExtractRes((PluginUserDir + "\\\\wTray\\\\Secure.png").w_str(),L"SECURE",L"DATA");
+  //else if(MD5File(PluginUserDir + "\\\\wTray\\\\Secure.png")!="61352B4B83745248D4871DFC63AA114A")
+  // ExtractRes((PluginUserDir + "\\\\wTray\\\\Secure.png").w_str(),L"SECURE",L"DATA");
   //Przypisanie ikonek do interfejsu AQQ
   ONLINE = PluginLink.CallService(AQQ_ICONS_LOADPNGICON,0, (LPARAM)(PluginUserDir + "\\\\wTray\\\\Online.png").w_str());
   OFFLINE = PluginLink.CallService(AQQ_ICONS_LOADPNGICON,0, (LPARAM)(PluginUserDir + "\\\\wTray\\\\Offline.png").w_str());
