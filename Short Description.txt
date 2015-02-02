@@ -1,4 +1,4 @@
 PL:
-Wtyczka zmienia ikonki w zasobniku systemowym tak, aby pasowa³y do systemu Windows od wersji 7 wzwy¿.
+Zmienia ikonki w zasobniku systemowym tak, aby pasowa³y do systemu Windows od wersji 7 wzwy¿.
 EN:
-Plugin replaces icons in the system tray to fit into Windows since version 7 and above.
+Replaces icons in the system tray to fit into Windows since version 7 and above.
