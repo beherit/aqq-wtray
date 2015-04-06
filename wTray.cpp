@@ -298,7 +298,7 @@ extern "C" __declspec(dllexport) PPluginInfo __stdcall AQQPluginInfo(DWORD AQQVe
 {
 	PluginInfo.cbSize = sizeof(TPluginInfo);
 	PluginInfo.ShortName = L"wTray";
-	PluginInfo.Version = PLUGIN_MAKE_VERSION(1,0,1,0);
+	PluginInfo.Version = PLUGIN_MAKE_VERSION(1,0,1,2);
 	PluginInfo.Description = L"Zmienia ikonki w zasobniku systemowym tak, aby pasowa³y do systemu Windows od wersji 7 wzwy¿.";
 	PluginInfo.Author = L"Krzysztof Grochocki";
 	PluginInfo.AuthorMail = L"kontakt@beherit.pl";
