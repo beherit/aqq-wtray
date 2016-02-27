@@ -1,5 +1,5 @@
 //---------------------------------------------------------------------------
-// Copyright (C) 2015 Krzysztof Grochocki
+// Copyright (C) 2014-2016 Krzysztof Grochocki
 //
 // This file is part of wTray
 //
@@ -299,9 +299,9 @@ extern "C" __declspec(dllexport) PPluginInfo __stdcall AQQPluginInfo(DWORD AQQVe
 	PluginInfo.Version = PLUGIN_MAKE_VERSION(1,0,1,2);
 	PluginInfo.Description = L"Zmienia ikonki w zasobniku systemowym tak, aby pasowa³y do systemu Windows od wersji 7 wzwy¿.";
 	PluginInfo.Author = L"Krzysztof Grochocki";
-	PluginInfo.AuthorMail = L"kontakt@beherit.pl";
+	PluginInfo.AuthorMail = L"contact@beherit.pl";
 	PluginInfo.Copyright = L"Krzysztof Grochocki";
-	PluginInfo.Homepage = L"http://beherit.pl";
+	PluginInfo.Homepage = L"beherit.pl";
 	PluginInfo.Flag = 0;
 	PluginInfo.ReplaceDefaultModule = 0;
 
