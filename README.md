@@ -13,7 +13,7 @@ Do skompilowania wtyczki wTray potrzebne jest:
 Znalezione błędy wtyczki należy zgłaszać w [tym temacie](http://forum.aqq.eu/topic/12441-wtray-1000/) znajdującym na oficjalnym forum komunikatora AQQ lub pisząc bezpośrednio do autora wtyczki (preferowany kontakt poprzez Jabber).
 
 ### Kontakt z autorem
-Autorem wtyczki wTray jest Krzysztof Grochocki. Możesz skontaktować się z nim drogą mailową (kontakt@beherit.pl) lub poprzez Jabber (im@beherit.pl).
+Autorem wtyczki wTray jest Krzysztof Grochocki. Możesz skontaktować się z nim poprzez XMPP pisząc na im@beherit.pl.
 
 ### Licencja
 Wtyczka wTray objęta jest licencją [GNU General Public License 3](http://www.gnu.org/copyleft/gpl.html).
